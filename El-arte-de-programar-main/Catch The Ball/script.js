@@ -13,14 +13,14 @@ canvas.height = 600;
 let ball = {
   x: Math.random() * 380 + 10, // Posición aleatoria inicial (evita los bordes)
   y: 0,
-  radius: 15,
+  radius: 30,
   speed: 7,
-  color: "red",
+  color: "blue",
 };
 
 // 🧍 Control del jugador (la barra)
 let catcher = {
-  width: 80,
+  width: 120,
   height: 10,
   x: canvas.width / 2 - 40, // Centrado al inicio
   y: canvas.height - 40,
