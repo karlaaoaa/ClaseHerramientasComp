@@ -67,6 +67,10 @@ function update() {
 
 // 🔁 Reinicia la bola desde arriba
 function resetBall() {
+  // Disminuye el tamaño cada vez que cae
+  if (ball.radius > 5) {  // límite mínimo para que no sea invisible
+    ball.radius -= 0.1;
+  }
   ball.x = Math.random() * (canvas.width - ball.radius * 2) + ball.radius;
   ball.y = 0;
 }
