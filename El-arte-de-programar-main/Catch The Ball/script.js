@@ -6,16 +6,16 @@ const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
 // 🔧 Ajustes del lienzo
-canvas.width = 400;
+canvas.width = 600;
 canvas.height = 600;
 
 // 🏀 Configuración de la bola
 let ball = {
-  x: Math.random() * 380 + 10, // Posición aleatoria inicial (evita los bordes)
+  x: Math.random() * 580 + 10, // Posición aleatoria inicial (evita los bordes)
   y: 0,
   radius: 15,
   speed: 3,
-  color: "red",
+  color: "purple",
 };
 
 // 🧍 Control del jugador (la barra)
