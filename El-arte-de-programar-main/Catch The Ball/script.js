@@ -15,13 +15,13 @@ let ball = {
   y: 0,
   radius: 30,
   speed: 2,
-  color: "red",
+  color: "blue",
 };
 
 // 🧍 Control del jugador (la barra)
 let catcher = {
-  width: 80,
-  height: 10,
+  width: 120,
+  height: 30,
   x: canvas.width / 2 - 40, // Centrado al inicio
   y: canvas.height - 40,
   color: "white",
