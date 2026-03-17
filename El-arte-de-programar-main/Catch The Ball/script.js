@@ -14,7 +14,7 @@ let ball = {
   x: Math.random() * 380 + 10, // Posición aleatoria inicial (evita los bordes)
   y: 0,
   radius: 15,
-  speed: 3,
+  speed: 7,
   color: "red",
 };
 
@@ -60,7 +60,7 @@ function update() {
   if (ball.y > canvas.height) {
     alert(`💀 Game Over! Score: ${score}`);
     score = 0;
-    ball.speed = 3;
+    ball.speed = 7;
     resetBall();
   }
 }
